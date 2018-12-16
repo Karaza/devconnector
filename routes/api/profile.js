@@ -207,7 +207,7 @@ router.post(
   (req, res) => {
     const { errors, isValid } = validateEducationInput(req.body);
 
-    // Chech Vaidation
+    // Check Validation
     if (!isValid) {
       // Return any errors with 400 status
       return res.status(400).json(errors);
